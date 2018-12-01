@@ -10,7 +10,7 @@ namespace AdventOfCode2018
         {
             //new HelloWorld().PrintHelloWorld();
 
-            Console.WriteLine(new Day1().SolvePart1());
+            Console.WriteLine(new Day1().SolvePart2());
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
             
