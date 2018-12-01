@@ -4,7 +4,8 @@ namespace AdventOfCode2018
 {
     public class HelloWorld
     {
-        static void Main(string[] args)
+
+        public void PrintHelloWorld()
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Press any key to exit...");
