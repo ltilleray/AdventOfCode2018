@@ -11,6 +11,17 @@ namespace AdventOfCode2018
         private HashSet<int> frequencies;
         private bool matchFound;
 
+        public Day1()
+        {
+            // Prepare a set to hold all known frequencies
+            frequencies = new HashSet<int>
+            {
+                0
+            };
+
+            matchFound = false;
+        }
+
         public int SolvePart1()
         {
             var result = 0;
@@ -22,14 +33,7 @@ namespace AdventOfCode2018
 
         public int SolvePart2()
         {
-            // Prepare a set to hold all known frequencies
             var currentFrequency = 0;
-            frequencies = new HashSet<int>
-            {
-                currentFrequency
-            };
-
-            matchFound = false;
             while (matchFound == false)
             {
                 currentFrequency = IterateOverFrequencies(currentFrequency);
@@ -43,7 +47,7 @@ namespace AdventOfCode2018
             return firstNumber + secondNumber;
         }
 
-        public string[] ReadFile()
+        public virtual string[] ReadFile()
         {
             return File.ReadAllLines(@"C:\Users\Luke\source\repos\AdventOfCode2018\AdventOfCode2018\day1input.txt");
         }
