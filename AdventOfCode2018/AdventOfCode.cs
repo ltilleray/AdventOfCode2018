@@ -8,9 +8,7 @@ namespace AdventOfCode2018
     {
         static void Main(string[] args)
         {
-            //new HelloWorld().PrintHelloWorld();
-
-            Console.WriteLine(new Day1().SolvePart2());
+            Console.WriteLine(new Day2().SolvePart1());
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
             
